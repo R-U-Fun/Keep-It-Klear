@@ -1,0 +1,13 @@
+{
+    "Header": {
+        "Title": "Blue Lily Cakes",
+        "Nav_1": {
+            "Icon": "bi bi-house",
+            "Name": "Home"
+        }
+    },
+    "Welcome": {
+        "Title": "Blue Lily Cakes",
+        "Tagline": "Where Innovation Meets the #Cake"
+    }
+}

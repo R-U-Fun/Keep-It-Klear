@@ -1,0 +1,16 @@
+# Enable caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 week"
+    ExpiresByType image/jpeg "access plus 1 week"
+    ExpiresByType image/png "access plus 1 week"
+    ExpiresByType model/gltf+json "access plus 1 week"
+    ExpiresByType application/octet-stream "access plus 1 week"
+</IfModule>
+
+# Cache-Control Headers
+<IfModule mod_headers.c>
+    <FilesMatch "\.(jpg|jpeg|png|gltf|bin)$">
+        Header set Cache-Control "max-age=604800, public"
+    </FilesMatch>
+</IfModule>
